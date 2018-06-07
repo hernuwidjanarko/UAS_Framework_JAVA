@@ -1,0 +1,44 @@
+NAMA : HERNU WIDJANARKO
+NIM : G.231.14.0185
+
+1. Pada file web.xml
+Script sebelumnya :
+<servlet-mapping>
+<servlet-name>myspring</servlet-name>
+<url-pattern>*.html</url-pattern>
+<url-pattern>*.anything</url-pattern>
+</servlet-mapping>
+
+Yang Sesuai :
+<servlet-mapping>
+<servlet-name>my-spring</servlet-name>
+<url-pattern>*.html</url-pattern>
+<url-pattern>*.anything</url-pattern>
+</servlet-mapping>
+
+2. Pada file HelloWorld.java muncul error
+Script sebelumnya
+- return new ModelAndView("welcome", "message", messages);
+Yang Sesuai :
+- return new ModelAndView("welcome", "message", message);
+
+3. Pada file index.jsp muncul warning
+Script sebelumnya :
+<a href="hello.html">Click here to see Welcome message</a><p>
+Yang Sesuai :
+<a href="hello.html">Click here to see Welcome message</a>
+
+4. Pada file my-spring-servlet.xml
+script sebelumnya :
+<context:component-scan base-package="com.tobuku" />
+
+Yang Sesuai :
+<context:component-scan base-package="com.tobuku.controller" />
+
+5. Pada file my-spring-servlet.xml
+Script sebelumnya :
+<property name="suffix" value=".xml" />  
+
+Yang Sesuai :
+<property name="suffix" value=".jsp" />  
+
